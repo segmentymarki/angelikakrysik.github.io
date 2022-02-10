@@ -1,7 +1,108 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Director</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="src/css/main.css">
+    </head>
+    <body>
+    	<main>
+    		<section class="hero">
+    			<h1><figure></figure>Director</h1>
+    			<p>A simple tweening library for animating DOM elements and JavaScript objects.</p>
+    		</section>
+    		<section class="dom">
+				<h2>Animate DOM Elements</h2>
+				<div class="dom-to">
+					<div class="card-wrap">
+						<article class="dom-to--card">
+	                        <h4>Director.to()</h4>
+	                        <hr />
+	                        <p>A 'to' tween will allow you to animate properties from their current state to a specified end state.</p>
+	                    </article>
+					</div>
+                    <div class="button-wrap">
+                    	<button id="dom-to--button">Play 'to' tween</button>
+                    	<button id="dom-to--reset" class="reset">Reset</button>
+                    </div>
+				</div>
+				<div class="dom-from">
+					<div class="card-wrap">
+						<article class="dom-from--card">
+	                        <h4>Director.from()</h4>
+	                        <hr />
+	                        <p>A 'from' tween will allow you to animate properties from a specified state to their current state.</p>
+	                    </article>
+					</div>
+                    <div class="button-wrap">
+                    	<button id="dom-from--button">Play 'from' tween</button>
+                    	<button id="dom-from--reset" class="reset">Reset</button>
+                    </div>
+				</div>
+				<div class="dom-fromto">
+					<div class="card-wrap">
+						<article class="dom-fromto--card">
+	                        <h4>Director.fromTo</h4>
+	                        <hr />
+	                        <p>A 'fromTo' tween will allow you to animate properties by providing both a beginning state and an ending state.</p>
+	                    </article>
+					</div>
+                    <div class="button-wrap">
+                    	<button id="dom-fromto--button">Play 'fromTo' tween</button>
+                    	<button id="dom-fromto--reset" class="reset">Reset</button>
+                    </div>
+				</div>
+				<div class="dom-class">
+					<div class="dom-class--card-wrap">
+						<article class="dom-class--card">
+							<h4>Director.addClass() & Director.removeClass()</h4>
+	                        <hr />
+	                        <p>The addClass method will append a class to any DOM Node or NodeList. The removeClass method will remove a class from any DOM Node or NodeList.</p>
+						</article>
+					</div>
+					<div class="button-wrap">
+                    	<button id="dom-class--add">Add Class</button>
+                    	<button id="dom-class--remove">Remove Class</button>
+                    </div>
+				</div>
+				<h3>Create a Scene</h3>
+				<p>Tie multiple animations together into one choreographed sequence.</p>
+				<div class="stagger-scene">
+					<div class="stagger">
+						<div class="stagger-background"></div>
+						<div class="stagger-background--two">Together</div>
+						<div class="stagger-item">Stagger</div>
+						<div class="stagger-item">Grouped</div>
+						<div class="stagger-item">Items</div>
+					</div>
+					<div class="button-wrap">
+						<button id="dom-scene--button">Play Scene</button>
+						<button id="dom-scene--reset" class="reset">Reset</button>
+					</div>
+				</div>
+				<h3>Add a Camera</h3>
+				<p>Scrub through a scene by scrolling</p>
+				<div class="stagger-camera-wrap">
+					<div class="stagger-camera">
+						<div class="stagger">
+							<div class="stagger-background"></div>
+							<div class="stagger-background--two">Together</div>
+							<div class="stagger-item">Stagger</div>
+							<div class="stagger-item">Grouped</div>
+							<div class="stagger-item">Items</div>
+						</div>
+					</div>
+				</div>
+    		</section>
+    		<section class="object">
+    			<h2>Animate JavaScript Objects</h2>
+    			<canvas></canvas>
+    			<input type="range" min="0" max="1" step="0.01">
+    		</section>
+    	</main>
+        <script src="dist/js/demo.js"></script>
+    </body>
 </html>
